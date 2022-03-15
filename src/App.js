@@ -1,11 +1,18 @@
 import CounterHooks from './CounterHooks';
+import Mock from './Mock';
 import Toggler from './Toggler';
 
 function App() {
+	const name = 'Rizo';
+	const surname = 'Abduganeoff';
+	const job = 'Student';
+	const age = '27';
+
+	const luboy = { name, surname, job, age };
+
 	return (
 		<div className="App">
-			<CounterHooks />
-			<Toggler />
+			<Mock {...luboy} />
 		</div>
 	);
 }
